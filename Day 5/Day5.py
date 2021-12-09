@@ -20,5 +20,6 @@ for x1,y1,x2,y2 in diag:
             if y2>y1: y = y1+(x-x1)
             else:     y = y1-(x-x1)
             b[(x,y)]=b.get((x,y),0)+1
+            
 print( sum(v>1 for v in a.values()) ) # Part 1 Solution
 print( sum(v>1 for v in b.values()) ) # Part 2 Solution
